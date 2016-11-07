@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VscModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="VscEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AppUsers" EntityType="VscModel.AppUser" />
+    <EntitySet Name="DriverInfoes" EntityType="VscModel.DriverInfo" />
+  </EntityContainer>
+  <EntityType Name="AppUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DriverInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RouteID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RouteName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PlannedStartDate" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PlannedEndDate" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DepotID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DepotName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DriverID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DriverName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DriverReference" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DriverTag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="StopElementID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SequenceNo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PlannedArrivalTime" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PlannedDepartureTime" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LocationName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HasArrived" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HasDeparted" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Lat" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Long" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

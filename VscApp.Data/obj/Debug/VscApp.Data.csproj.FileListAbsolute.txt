@@ -1,0 +1,10 @@
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\VscApp.Data.dll.config
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\VscApp.Data.dll
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\VscApp.Data.pdb
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\EntityFramework.dll
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\EntityFramework.xml
+C:\Users\Quinton Bosch\VscApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Quinton Bosch\VscApp.Data\obj\Debug\VscApp.Data.dll
+C:\Users\Quinton Bosch\VscApp.Data\obj\Debug\VscApp.Data.pdb
+C:\Users\Quinton Bosch\VscApp.Data\obj\Debug\VscApp.Data.csprojResolveAssemblyReference.cache

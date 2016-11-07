@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VscModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AppUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DriverInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="255" />
+          <Property Name="CustomerID" Type="nvarchar" MaxLength="255" />
+          <Property Name="RouteID" Type="nvarchar" MaxLength="255" />
+          <Property Name="RouteName" Type="nvarchar" MaxLength="255" />
+          <Property Name="PlannedStartDate" Type="nvarchar" MaxLength="255" />
+          <Property Name="PlannedEndDate" Type="nvarchar" MaxLength="255" />
+          <Property Name="DepotID" Type="nvarchar" MaxLength="255" />
+          <Property Name="DepotName" Type="nvarchar" MaxLength="255" />
+          <Property Name="DriverID" Type="nvarchar" MaxLength="255" />
+          <Property Name="DriverName" Type="nvarchar" MaxLength="255" />
+          <Property Name="DriverReference" Type="nvarchar" MaxLength="255" />
+          <Property Name="DriverTag" Type="nvarchar" MaxLength="255" />
+          <Property Name="StopElementID" Type="nvarchar" MaxLength="255" />
+          <Property Name="SequenceNo" Type="nvarchar" MaxLength="255" />
+          <Property Name="PlannedArrivalTime" Type="nvarchar" MaxLength="255" />
+          <Property Name="PlannedDepartureTime" Type="nvarchar" MaxLength="255" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="255" />
+          <Property Name="HasArrived" Type="nvarchar" MaxLength="255" />
+          <Property Name="HasDeparted" Type="nvarchar" MaxLength="255" />
+          <Property Name="Lat" Type="nvarchar" MaxLength="255" />
+          <Property Name="Long" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="VscModelStoreContainer">
+          <EntitySet Name="AppUser" EntityType="Self.AppUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DriverInfo" EntityType="Self.DriverInfo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VscModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="VscEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AppUsers" EntityType="VscModel.AppUser" />
+          <EntitySet Name="DriverInfoes" EntityType="VscModel.DriverInfo" />
+        </EntityContainer>
+        <EntityType Name="AppUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DriverInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RouteID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RouteName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PlannedStartDate" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PlannedEndDate" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DepotID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DepotName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DriverID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DriverName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DriverReference" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DriverTag" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StopElementID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SequenceNo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PlannedArrivalTime" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PlannedDepartureTime" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LocationName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HasArrived" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HasDeparted" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Lat" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Long" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VscModelStoreContainer" CdmEntityContainer="VscEntities">
+          <EntitySetMapping Name="AppUsers">
+            <EntityTypeMapping TypeName="VscModel.AppUser">
+              <MappingFragment StoreEntitySet="AppUser">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DriverInfoes">
+            <EntityTypeMapping TypeName="VscModel.DriverInfo">
+              <MappingFragment StoreEntitySet="DriverInfo">
+                <ScalarProperty Name="Long" ColumnName="Long" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="HasDeparted" ColumnName="HasDeparted" />
+                <ScalarProperty Name="HasArrived" ColumnName="HasArrived" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="PlannedDepartureTime" ColumnName="PlannedDepartureTime" />
+                <ScalarProperty Name="PlannedArrivalTime" ColumnName="PlannedArrivalTime" />
+                <ScalarProperty Name="SequenceNo" ColumnName="SequenceNo" />
+                <ScalarProperty Name="StopElementID" ColumnName="StopElementID" />
+                <ScalarProperty Name="DriverTag" ColumnName="DriverTag" />
+                <ScalarProperty Name="DriverReference" ColumnName="DriverReference" />
+                <ScalarProperty Name="DriverName" ColumnName="DriverName" />
+                <ScalarProperty Name="DriverID" ColumnName="DriverID" />
+                <ScalarProperty Name="DepotName" ColumnName="DepotName" />
+                <ScalarProperty Name="DepotID" ColumnName="DepotID" />
+                <ScalarProperty Name="PlannedEndDate" ColumnName="PlannedEndDate" />
+                <ScalarProperty Name="PlannedStartDate" ColumnName="PlannedStartDate" />
+                <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+                <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

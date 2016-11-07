@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VscModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AppUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DriverInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="255" />
+    <Property Name="RouteID" Type="nvarchar" MaxLength="255" />
+    <Property Name="RouteName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlannedStartDate" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlannedEndDate" Type="nvarchar" MaxLength="255" />
+    <Property Name="DepotID" Type="nvarchar" MaxLength="255" />
+    <Property Name="DepotName" Type="nvarchar" MaxLength="255" />
+    <Property Name="DriverID" Type="nvarchar" MaxLength="255" />
+    <Property Name="DriverName" Type="nvarchar" MaxLength="255" />
+    <Property Name="DriverReference" Type="nvarchar" MaxLength="255" />
+    <Property Name="DriverTag" Type="nvarchar" MaxLength="255" />
+    <Property Name="StopElementID" Type="nvarchar" MaxLength="255" />
+    <Property Name="SequenceNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlannedArrivalTime" Type="nvarchar" MaxLength="255" />
+    <Property Name="PlannedDepartureTime" Type="nvarchar" MaxLength="255" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="255" />
+    <Property Name="HasArrived" Type="nvarchar" MaxLength="255" />
+    <Property Name="HasDeparted" Type="nvarchar" MaxLength="255" />
+    <Property Name="Lat" Type="nvarchar" MaxLength="255" />
+    <Property Name="Long" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="VscModelStoreContainer">
+    <EntitySet Name="AppUser" EntityType="Self.AppUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DriverInfo" EntityType="Self.DriverInfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

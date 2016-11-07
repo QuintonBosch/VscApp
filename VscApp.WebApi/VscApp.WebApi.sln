@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VscApp.WebApi", "VscApp.WebApi\VscApp.WebApi.csproj", "{EBC7BD19-DE05-423E-ACBF-81823E6952FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VscApp.Data", "..\VscApp.Data\VscApp.Data.csproj", "{820204F7-0DAA-4C54-88E6-00156271FAE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VscApp.UnitTest", "..\VscApp.UnitTest\VscApp.UnitTest.csproj", "{D63CCE3D-7D60-4FA5-97AF-F5517072B4B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC7BD19-DE05-423E-ACBF-81823E6952FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC7BD19-DE05-423E-ACBF-81823E6952FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC7BD19-DE05-423E-ACBF-81823E6952FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC7BD19-DE05-423E-ACBF-81823E6952FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820204F7-0DAA-4C54-88E6-00156271FAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820204F7-0DAA-4C54-88E6-00156271FAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820204F7-0DAA-4C54-88E6-00156271FAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820204F7-0DAA-4C54-88E6-00156271FAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63CCE3D-7D60-4FA5-97AF-F5517072B4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63CCE3D-7D60-4FA5-97AF-F5517072B4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63CCE3D-7D60-4FA5-97AF-F5517072B4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63CCE3D-7D60-4FA5-97AF-F5517072B4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

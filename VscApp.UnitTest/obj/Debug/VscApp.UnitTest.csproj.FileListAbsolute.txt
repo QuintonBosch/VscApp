@@ -1,0 +1,10 @@
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\VscApp.UnitTest.dll
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\VscApp.UnitTest.pdb
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Quinton Bosch\VscApp.UnitTest\obj\Debug\VscApp.UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Quinton Bosch\VscApp.UnitTest\obj\Debug\VscApp.UnitTest.dll
+C:\Users\Quinton Bosch\VscApp.UnitTest\obj\Debug\VscApp.UnitTest.pdb
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\VscApp.Data.dll
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\VscApp.Data.pdb
+C:\Users\Quinton Bosch\VscApp.UnitTest\bin\Debug\EntityFramework.xml
