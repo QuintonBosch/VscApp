@@ -11,3 +11,4 @@ git remote add origin
 git remote add origin https://github.com/QuintonBosch/VscApp.git
 git remote -v
 git push origin master
+git add .
